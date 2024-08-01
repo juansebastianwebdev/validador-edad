@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(to bottom, #d5deef, #628ecb);
+  height: 100vh;
+}
+
+.titulo {
+  font-family: "Ubuntu";
+  color: #000;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 80px 0 0 0;
+}
+
+form {
+  width: 300px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 15px rgba(255, 255, 255, 0.8);
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+.btnregistrarse {
+  width: 150px;
+  height: 35px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.btnregistrarse:active {
+  background-color: #000;
+  color: #fff;
+}
+.modal-title {
+  color: #f32d30;
+  font-weight: 600;
+}
+.modal-body {
+  font-family: "Ubuntu";
+}
+.modal-footer button {
+  font-family: "Ubuntu";
+}
+footer h5 {
+  font-family: "Ubuntu";
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+footer p {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  color: #fff;
+}

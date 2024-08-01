@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de Edad</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="container vh-100 d-flex flex-column justify-content-around align-items-center"
+    >
+      <h1 class="titulo">Validar Edad</h1>
+      <form
+        action=""
+        class="d-flex flex-column justify-content-center align-items-center gap-3 p-2"
+      >
+        <input
+          id="nombre"
+          type="text"
+          class="form-control border-2 bg-transparent fw-medium"
+          placeholder="Ingrese su nombre"
+        />
+        <input
+          id="edad"
+          type="number"
+          class="form-control border-2 bg-transparent fw-medium"
+          placeholder="Ingrese su edad"
+        />
+        <button
+          type="button"
+          class="btnregistrarse"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          onclick="registrarse()"
+        >
+          Registrarse
+        </button>
+
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-black" id="staticBackdropLabel">
+                  Registro
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <footer class="d-flex flex-column align-items-center">
+        <h5 class="text-black">Terminos y Condiciones</h5>
+        <p class="text-center text-black">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
+          cumque quidem quas sunt at voluptatum accusamus alias consequuntur
+          recusandae. Voluptas eius illum odit neque aperiam assumenda libero,
+          quaerat quam iste!
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
